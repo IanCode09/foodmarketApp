@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.lexical.foodmarketapp.MainActivity
 import com.lexical.foodmarketapp.R
 import com.lexical.foodmarketapp.ui.auth.AuthActivity
 

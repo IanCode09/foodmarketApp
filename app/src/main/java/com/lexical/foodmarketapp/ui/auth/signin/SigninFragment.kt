@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.lexical.foodmarketapp.R
 import com.lexical.foodmarketapp.databinding.FragmentSigninBinding
+import com.lexical.foodmarketapp.ui.MainActivity
 import com.lexical.foodmarketapp.ui.auth.AuthActivity
 
 class SigninFragment : Fragment() {
@@ -32,6 +33,12 @@ class SigninFragment : Fragment() {
             val signup = Intent(activity, AuthActivity::class.java)
             signup.putExtra("page_request", 2)
             startActivity(signup)
+        }
+
+        binding.btnSignin.setOnClickListener {
+            val home = Intent(activity, MainActivity::class.java)
+            startActivity(home)
+            activity?.finish()
         }
     }
 }
