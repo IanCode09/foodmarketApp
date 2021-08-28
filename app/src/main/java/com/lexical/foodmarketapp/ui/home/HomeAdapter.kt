@@ -24,7 +24,7 @@ class HomeAdapter (
     }
 
     override fun onBindViewHolder(holder: HomeAdapter.ViewHolder, position: Int) {
-        holder.bind(listData(position), itemAdapterCallback)
+        holder.bind(listData[position], itemAdapterCallback)
     }
 
     override fun getItemCount(): Int {
