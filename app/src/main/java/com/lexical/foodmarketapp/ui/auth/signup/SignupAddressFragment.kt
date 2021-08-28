@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.Navigation
 import com.lexical.foodmarketapp.R
 import com.lexical.foodmarketapp.databinding.FragmentSignupAddressBinding
+import com.lexical.foodmarketapp.ui.auth.AuthActivity
 
 class SignupAddressFragment : Fragment() {
 
@@ -28,9 +29,13 @@ class SignupAddressFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
+        (activity as AuthActivity).toolbarSignUpAddress()
+
         binding.btnSignUpNow.setOnClickListener {
             Navigation.findNavController(it)
                 .navigate(R.id.action_signup_success, null)
+
+            (activity as AuthActivity).toolbarSignUpSuccess()
         }
     }
 }
