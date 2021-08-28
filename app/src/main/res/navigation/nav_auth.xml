@@ -9,9 +9,15 @@
         android:name="com.lexical.foodmarketapp.ui.auth.signin.SigninFragment"
         tools:layout="@layout/fragment_signin" />
 
+        <action android:id="@+id/action_signup"
+            app:destination="@+id/fragmentSignUp" />
+
     <fragment android:id="@+id/fragmentSignUp"
         android:name="com.lexical.foodmarketapp.ui.auth.signup.SignupFragment"
         tools:layout="@layout/fragment_signup" />
+
+        <action android:id="@+id/action_signup_address"
+            app:destination="@+id/fragmentSignUpAddress" />
 
     <fragment android:id="@+id/fragmentSignUpAddress"
         android:name="com.lexical.foodmarketapp.ui.auth.signup.SignupAddressFragment"
