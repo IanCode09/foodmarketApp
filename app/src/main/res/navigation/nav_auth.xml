@@ -23,4 +23,11 @@
         android:name="com.lexical.foodmarketapp.ui.auth.signup.SignupAddressFragment"
         tools:layout="@layout/fragment_signup_address" />
 
+        <action android:id="@+id/action_signup_success"
+            app:destination="@+id/fragmentSignUpSuccess" />
+
+    <fragment android:id="@+id/fragmentSignUpSuccess"
+        android:name="com.lexical.foodmarketapp.ui.auth.signup.SignupSuccessFragment"
+        tools:layout="@layout/fragment_signup_address" />
+
 </navigation>
