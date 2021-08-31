@@ -48,10 +48,10 @@ class HomeFragment : Fragment(), HomeAdapter.ItemAdapterCallback {
 
     fun initDataDummy() {
         foodList = ArrayList()
-        foodList.add(HomeModel("Testing Food 1", "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80", 5f))
-        foodList.add(HomeModel("Testing Food 2", "", 4f))
-        foodList.add(HomeModel("Testing Food 3", "", 3f))
-        foodList.add(HomeModel("Testing Food 4", "", 2f))
+        foodList.add(HomeModel("Testing Food 1", "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=220&q=80", 5f))
+        foodList.add(HomeModel("Testing Food 2", "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80", 4f))
+        foodList.add(HomeModel("Testing Food 3", "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80", 3f))
+        foodList.add(HomeModel("Testing Food 4", "https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80", 2f))
     }
 
     override fun onClick(v: View, data: HomeModel) {

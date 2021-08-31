@@ -18,7 +18,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginEnd="24dp"
-            android:src="@drawable/ic_picture_empty"
+            android:src="@drawable/ic_profile"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="30dp"
-            android:text="FoodMarket"
+            android:text="WoyoFood"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
