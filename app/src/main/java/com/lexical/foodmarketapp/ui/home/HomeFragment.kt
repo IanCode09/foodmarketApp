@@ -44,6 +44,13 @@ class HomeFragment : Fragment(), HomeAdapter.ItemAdapterCallback {
 
         rcList.layoutManager = layoutManager
         rcList.adapter = adapter
+
+        val sectionPagerAdapter = SectionPagerAdapter(
+            childFragmentManager
+        )
+
+        viewPager.adapter = sectionPagerAdapter
+        tabLayout.setupWithViewPager(viewPager)
     }
 
     fun initDataDummy() {
