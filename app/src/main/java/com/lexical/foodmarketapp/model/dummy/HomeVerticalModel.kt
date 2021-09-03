@@ -1,6 +1,6 @@
 package com.lexical.foodmarketapp.model.dummy
 
-class HomeVerticalModel(title: String, price: String, rating: Float) {
+class HomeVerticalModel(title: String, price: String, src:String, rating: Float) {
 
     var title = ""
     var price = ""
