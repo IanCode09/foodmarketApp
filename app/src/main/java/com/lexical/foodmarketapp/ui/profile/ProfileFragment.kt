@@ -12,32 +12,21 @@ import com.lexical.foodmarketapp.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
 
-  private lateinit var notificationsViewModel: NotificationsViewModel
-private var _binding: FragmentProfileBinding? = null
-  // This property is only valid between onCreateView and
-  // onDestroyView.
-  private val binding get() = _binding!!
+    private var _binding: FragmentProfileBinding? = null
 
-  override fun onCreateView(
-    inflater: LayoutInflater,
-    container: ViewGroup?,
-    savedInstanceState: Bundle?
-  ): View? {
-    notificationsViewModel =
-            ViewModelProvider(this).get(NotificationsViewModel::class.java)
+    // This property is only valid between onCreateView and
+    // onDestroyView.
+    private val binding get() = _binding!!
 
-    _binding = FragmentProfileBinding.inflate(inflater, container, false)
-    val root: View = binding.root
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
 
-    val textView: TextView = binding.textNotifications
-    notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
-      textView.text = it
-    })
-    return root
-  }
+        _binding = FragmentProfileBinding.inflate(inflater, container, false)
+        val root: View = binding.root
 
-override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+        return root
     }
 }
