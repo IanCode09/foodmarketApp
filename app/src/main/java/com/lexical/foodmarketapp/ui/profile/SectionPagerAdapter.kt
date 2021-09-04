@@ -36,7 +36,7 @@ class SectionPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
                 return fragment
             }
             else -> {
-                fragment = ProfileFragment()
+                fragment = ProfileAccountFragment()
                 return fragment
             }
         }
