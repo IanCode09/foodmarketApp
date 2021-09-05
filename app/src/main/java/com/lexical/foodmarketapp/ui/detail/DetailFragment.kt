@@ -31,6 +31,8 @@ class DetailFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
+        (activity as DetailActivity).toolbarDetail()
+
         btnOrderNow.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_payment)
         }

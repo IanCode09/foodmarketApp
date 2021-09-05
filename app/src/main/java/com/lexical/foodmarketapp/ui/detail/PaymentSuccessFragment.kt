@@ -25,4 +25,10 @@ class PaymentSuccessFragment : Fragment() {
 
         return root
     }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+        (activity as DetailActivity).toolbarDetail()
+    }
 }
