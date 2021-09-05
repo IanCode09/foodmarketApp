@@ -1,5 +1,6 @@
 package com.lexical.foodmarketapp.ui.home.popular
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.lexical.foodmarketapp.R
 import com.lexical.foodmarketapp.databinding.FragmentHomeNewTasteBinding
 import com.lexical.foodmarketapp.model.dummy.HomeVerticalModel
+import com.lexical.foodmarketapp.ui.detail.DetailActivity
 import com.lexical.foodmarketapp.ui.home.newtaste.HomeNewtasteAdapter
 import kotlinx.android.synthetic.main.fragment_home.*
 
@@ -54,6 +56,7 @@ class HomePopularFragment : Fragment(), HomeNewtasteAdapter.ItemAdapterCallback 
     }
 
     override fun onClick(v: View, data: HomeVerticalModel) {
-        Toast.makeText(context, "Klik Item " + data.title, Toast.LENGTH_SHORT).show()
+        val detail = Intent(activity, DetailActivity::class.java)
+        startActivity(detail)
     }
 }

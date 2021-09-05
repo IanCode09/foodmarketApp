@@ -1,5 +1,6 @@
 package com.lexical.foodmarketapp.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.lexical.foodmarketapp.databinding.FragmentHomeBinding
 import com.lexical.foodmarketapp.model.dummy.HomeModel
+import com.lexical.foodmarketapp.ui.detail.DetailActivity
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment(), HomeAdapter.ItemAdapterCallback {
@@ -62,6 +64,7 @@ class HomeFragment : Fragment(), HomeAdapter.ItemAdapterCallback {
     }
 
     override fun onClick(v: View, data: HomeModel) {
-
+        val detail = Intent(activity, DetailActivity::class.java)
+        startActivity(detail)
     }
 }
