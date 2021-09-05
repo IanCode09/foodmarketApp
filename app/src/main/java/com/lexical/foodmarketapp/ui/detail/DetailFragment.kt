@@ -5,9 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.lexical.foodmarketapp.R
 import com.lexical.foodmarketapp.databinding.FragmentDetailBinding
 import com.lexical.foodmarketapp.databinding.FragmentProfileBinding
+import kotlinx.android.synthetic.main.fragment_detail.*
 
 class DetailFragment : Fragment() {
 
@@ -26,5 +28,11 @@ class DetailFragment : Fragment() {
         return root
     }
 
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
 
+        btnOrderNow.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_payment)
+        }
+    }
 }
